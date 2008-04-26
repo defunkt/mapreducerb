@@ -2,8 +2,7 @@ require 'rubygems'
 require 'ruby2ruby'
 require 'ringy_dingy'
 
-ringy_dingy = RingyDingy.new nil
-ring_server = ringy_dingy.ring_server
+ring_server = RingyDingy.new(nil).ring_server
 
 loop do
   pid, block, element, idx = ring_server.take([:dmap, nil, nil, nil, nil]).last(4)

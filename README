@@ -2,14 +2,15 @@ By Blaine Cook.
 
 http://romeda.org/blog/2007/04/mapreduce-in-36-lines-of-ruby.html
 
-If you want to add `dinject` (reduce) please do.
+If you want to add `dinject` (reduce) please do:
+http://github.com/defunkt/mapreducerb
 
 In your shell:
 $ sudo gem install RingyDingy
 $ sudo gem install ruby2ruby
 $ ring_server &
-$ ruby mapreduce_runner &
-$ ruby mapreduce_runner &
+$ ruby mapreduce_runner.rb &
+$ ruby mapreduce_runner.rb &
 
 In IRB:
 >> require 'mapreduce_enumerable'
